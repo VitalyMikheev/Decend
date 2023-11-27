@@ -1,0 +1,232 @@
+body {
+	padding: 0;
+	margin:0;
+}
+div, p, input, header {
+	box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6 {
+	padding: 0;
+	margin:0;	
+}
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+.head-menu {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 41px;
+
+}
+.logo {
+    width: 183px;
+    height: 59px;
+}
+.menu {
+    width: 609px;
+    margin-left: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.menu li {
+	list-style-type: none;
+    color: #666;
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px; /* 130% */
+}
+.menu li a {
+    text-decoration: none;
+}
+.social {
+    margin-left: 51px;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main {
+    margin-top: 72px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.main__left {
+    width: 50%;
+    margin: auto 0;
+}
+.main__right {
+    display: flex;
+    justify-content: right;
+}
+.main h1 {
+    color: var(--Solid-Heading, #42446E);
+    font-family: Poppins;
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px; /* 120.69% */
+    letter-spacing: -1px;
+}
+.main h1 span {
+    background: var(--Gradient-Heading, linear-gradient(90deg, #13B0F5 -2.06%, #E70FAA 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Poppins;
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: -1px;
+}
+.stack {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 133px;
+}
+.projects {
+    margin: 0 auto;
+    padding-top: 133px;
+    padding-bottom: 247px;
+
+}
+.projects__head {
+    color: var(--Solid-Heading, #42446E);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px; /* 50% */
+}
+.projects-wrap {
+    margin-top: 66px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.project {
+    width: 387px;
+    margin-bottom: 26px;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.20);
+}
+.project-wrap {
+    padding: 24px 36px 15px;
+    width: 387px;
+}
+.project__head {
+    color: #000;
+    font-family: Poppins;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px; /* 92.857% */
+}
+.project__text {
+    color: var(--dark-content, #666);
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px; /* 144.444% */
+}
+.project__stack {
+    color: var(--Solid-Heading, #42446E);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+}
+.project__stack span {
+    color: var(--Solid-Heading, #42446E);
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px;
+}
+.project__link {
+    display: flex;
+}
+.project__link a {
+    padding-left: 10px;
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+    text-decoration-line: underline;
+}
+.project_full_wrap {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+
+}
+.project_full {
+    display: box;
+}
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 900px;
+    }
+    .menu {
+    display: none;
+    }
+    .main {
+        justify-content: space-around;
+    }
+    .main__right {
+        margin-top: 20px;
+    }
+    .projects-wrap {
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 550px;
+    }
+    .stack {
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+    width: 320px;
+    }
+    .logo {
+    margin: 0 auto;
+    }
+    .social {
+    display: none;
+    }
+    .main__right {
+    display: none;
+    }
+    .main h1 {
+        font-size: 35px;
+    }
+    .main h1 span {
+        font-size: 35px;
+    }
+}
+
